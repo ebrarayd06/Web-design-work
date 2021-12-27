@@ -1,0 +1,560 @@
+
+
+/* general css */
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+
+    font-size: 10px;
+
+}
+
+body {
+
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+
+}
+
+.clearfix::after {
+
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.img-fluid {
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+h1 h2 h3 h4 h5 h6 {
+
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+/*nav*/
+
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: #2C3E50;
+    padding: 2.4rem 0;
+    color: #fff;
+    z-index: 500;
+}
+
+
+
+
+nav #logo-box {
+
+    width: 50%;
+    float: left;
+
+}
+
+nav .logo {
+   
+    font-weight: 700;
+    font-size: 3.2rem;
+    font-family: Montserrat;
+    color: #fff;
+
+}
+
+#navbar {
+
+    width: 50%;
+    float: right;
+
+}
+
+#navbar .navbar-item {
+    float: right;
+   
+
+
+}
+
+
+#navbar .link {
+
+
+    font-size: 1.5rem;
+    display: block;
+    color: #fff;
+    padding: 1.3rem;
+    padding-bottom: 0;
+    font-family: Montserrat;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    transition: color .3s;
+    
+
+}
+
+#navbar .link:hover {
+
+    color: #18bc9c;
+}
+
+#navbar .nav-icon{
+    display:none;
+}
+
+/* header */
+
+header {
+
+    background-color: #18BC9C;
+    padding-top: calc(96px + 10rem);
+    padding-bottom: 9.6rem;
+    text-align: center;
+}
+
+.profile-ex {
+
+
+    font-size: 7.4rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    color: #fff;
+
+}
+
+.star-light {
+
+    border: none;
+    border-top: 0.4rem solid #fff;
+    max-width: 25rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+    height: 0;
+
+}
+
+.star-light::after {
+
+    content: "\f005";
+    font-family: "Font awesome 5 Free";
+    color: #fff;
+    font-weight: 900;
+    font-size: 3.2rem;
+    padding: 0 0.8rem;
+    position: relative;
+    top: -2.6rem;
+    background-color: #18BC9C;
+
+}
+
+header h2 {
+    color: #fff;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 2.8rem;
+}
+
+
+/*section*/
+
+#portfolio {
+
+    background-color: #fff;
+    padding: 11rem 0;
+    text-align: center;
+
+
+}
+
+section h2 {
+
+    color: #2C3E50;
+    font-size: 5.2rem;
+    font-weight: 900;
+
+}
+
+.star-dark {
+
+    border: none;
+    border-top: 0.4rem solid #2C3E50;
+    max-width: 25rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+    height: 0;
+
+}
+
+.star-dark::after {
+    content: "\f005";
+    font-family: "Font awesome 5 Free";
+    font-weight: 900;
+    font-size: 3.2rem;
+    color: #2C3E50;
+    background-color: #fff;
+    position: relative;
+    top: -2.6rem;
+    padding: 0 0.8rem;
+
+}
+
+
+.col {
+
+    float: left;
+    width: 33.33333%;
+    padding: 1rem;
+
+}
+
+.portfolio-item {
+
+    position: relative;
+
+}
+
+.portfolio-item img {
+
+    display: block;
+
+}
+
+.img-overlay {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #18BC9C;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+}
+
+.img-overlay .icon {
+
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.portfolio-item:hover .img-overlay {
+
+    opacity: 0.7;
+
+}
+
+
+
+/* about */
+
+#about {
+
+    background-color: #18BC9C;
+
+    text-align: center;
+    padding: 10rem 0;
+
+}
+
+#about h2 {
+
+    font-size: 5.2rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    color: #fff;
+}
+
+.star-light::after {
+    content: "\f005";
+    font-family: "Font awesome 5 Free";
+    font-weight: 900;
+    font-size: 3.2rem;
+    position: relative;
+    top: -2.6rem;
+    padding: 0 0.8rem;
+    background-color: #18BC9C;
+
+
+
+
+}
+
+.text-col {
+
+    float: left;
+    width: 50%;
+    padding: 0 2rem;
+
+}
+
+
+.text-item {
+
+    font-family: "Lato";
+    text-align: justify;
+    letter-spacing: 0.08rem;
+    padding-left: 18rem;
+    color: #fff
+}
+
+.text-item2 {
+
+    font-family: "Lato";
+    text-align: justify;
+    letter-spacing: 0.08rem;
+    padding-right: 18rem;
+    color: #fff;
+}
+
+.btn {
+
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1.5rem 3rem;
+    background-color: transparent;
+    color: #fff;
+    border: 0.3rem solid #fff;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #212529;
+}
+
+.btn-primary {
+    background-color: #18BC9C;
+    border-color: #18BC9C;
+
+}
+
+.btn-primary:hover {
+
+    background-color: 128f76;
+    border-color: #18BC9C;
+
+}
+
+
+/*contact*/
+
+#contact {
+
+    background-color: #fff;
+    text-align: center;
+    padding: 10rem 0;
+
+}
+
+#contact-form{
+
+width: 70%;
+margin:0 auto;
+text-align: left;
+
+}
+
+#contact .form-group{
+
+border-bottom: 1px solid #e9ecef;
+padding-bottom: 1rem;
+margin-bottom: 3rem;
+text-align: left;
+
+}
+
+.form-group input ,.form-group textarea{
+
+    width: 100%;
+    border:none;
+    font-size: 2.4rem;
+    display: block;
+
+}
+
+input:focus,textarea:focus{
+
+    outline: 0;
+
+}
+
+ 
+
+ footer{
+
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+    background-color: #2C3E50;
+    color:#fff;
+    text-align: center;
+
+ }
+
+ .col h3{
+     padding-bottom: 2rem;
+     font-size: 2.5rem;
+     font-weight: 900;
+
+ }
+
+ .col p{
+     font-family: "Lato";
+     font-weight: 300;
+ }
+
+ footer a{
+     color:#18BC9C
+ }
+
+ footer li{
+
+    display:inline-block;
+    margin-right: 1rem;
+
+ }
+ .btn-social{
+    
+    border-radius: 50%;
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    background-color:transparent;
+    border:0.2rem solid #fff;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s;
+ }
+
+ button:hover{
+
+    background-color: #fff;
+    color:#212529;
+
+ }
+
+ .copy{
+     width: 100%;
+     text-align: center;
+     padding: 2rem;
+     background-color: #212529;
+     color: #fff;
+ }
+
+
+ 
+/*responsive design */
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+    html{
+
+        font-size: 7px;
+    }
+
+    .text-col{
+
+        width: 100%;
+
+
+    }
+
+    .text-item{
+        padding-left: 0;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+
+    }
+    .text-item2{
+        padding-right: 0;
+    }
+
+    #portfolio .col{
+
+        width: 50%;
+
+    }
+
+}
+
+@media  screen and (max-width:992px){
+
+    html{
+
+        font-size:8.3px;
+    
+    }
+
+}
+
+@media screen and (max-width:1200px){
+
+html{
+
+    font-size:9px;
+
+}
+
+
+}
+
+@media   screen and (max-width:576px) {
+    html{
+        font-size: 6px;
+
+    }
+
+    #portfolio .col{
+
+        width: 100%;
+
+    }
+
+}
